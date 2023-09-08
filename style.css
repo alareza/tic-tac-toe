@@ -19,22 +19,23 @@ body {
 .gameboard {
   display: grid;
   grid-template: repeat(3, 100px) / repeat(3, 100px);
-  max-width: 300px;
+  width: max-content;
+  background-color: black;
+  grid-gap: 1px;
 }
 
 .grid-buttons {
-  font-size: 16px;
-  background: none;
-  color: inherit;
-  padding: 0;
+  background-color: darkgrey;
+  color: black;
+  font-size: 1rem;
   cursor: pointer;
-  border: 1px solid;
+  border: none;
 }
 
 #restart-btn {
   cursor: pointer;
   border: 1px solid;
   margin-bottom: 10px;
-  width: 50px;
   background: none;
+  font-size: 1rem;
 }
